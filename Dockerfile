@@ -42,8 +42,8 @@ RUN mkdir -p /run/php && \
 VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx", "/var/www/html"]
 
 # Copy start.sh script and define default command for the container
-COPY start.sh /start.sh
-CMD ["./start.sh"]
+#COPY start.sh /start.sh
+#CMD ["./start.sh"]
 
 # Expose Port for the Application 
 EXPOSE 80 443
